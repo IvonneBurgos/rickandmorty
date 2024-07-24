@@ -10,19 +10,20 @@ import SwiftUI
 struct ProfileCard: View {
     let character: Character
     var body: some View {
-        VStack(alignment: .center){
-            AsyncImage(url: URL(string: character.image)){
-                image in
-                image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100).cornerRadius(100).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                    
-            } placeholder: {
-                ProgressView().frame(width: 250, height: 250)
-            }
-            Text(character.name)
-                .font(.custom("GREENFUZ", size: 36)).foregroundStyle(.green)
+        
+        AsyncImage(url: URL(string: character.image)){
+            image in
+            image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 250, height: 250)
+                .clipShape(Circle())
+                .overlay{
+                    Circle().stroke(.white, lineWidth: 5)
+                }.shadow(radius: 6)
+            
+        } placeholder: {
+            ProgressView().frame(width: 250, height: 250)
         }
     }
 }

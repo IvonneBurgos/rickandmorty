@@ -10,14 +10,12 @@ import SwiftUI
 struct BigCard: View {
     let character: Character
     var body: some View {
-        NavigationLink(destination: DescriptionView(character: character)){
-            VStack(alignment: .center) {
-                Text(character.name)
-                    .font(.custom("GREENFUZ", size: 36)).foregroundStyle(.green)
-                imageCard
-            }.roundedCorner(20, corners: [.topLeft, .bottomRight]).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center)
+        {
+            imageCard.roundedCorner(20, corners: [.topLeft, .bottomRight])
+            Text(character.name)
+                .font(.custom("GREENFUZ", size: 36)).foregroundStyle(Color("Brown")).lineLimit(2)
         }
-        
     }
     
     var imageCard: some View {

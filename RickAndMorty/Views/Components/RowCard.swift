@@ -17,14 +17,13 @@ struct RowCard: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 100, height: 100).roundedCorner(50, corners: [.topRight, .bottomRight])
                 } placeholder: {
-                    ProgressView().frame(width: 30, height: 30)
+                    ProgressView().frame(width: 100, height: 100)
                 }
                 LazyVStack(alignment: .leading){
-                    Text(character.name).font(.headline)
+                    Text(character.name).font(.headline).multilineTextAlignment(.leading).lineLimit(1).padding(.horizontal, 0.0).truncationMode(/*@START_MENU_TOKEN@*/.tail/*@END_MENU_TOKEN@*/)
                     Text(character.species).font(.caption)
-                    
                 }
             }
         }

@@ -43,6 +43,7 @@
 		CCC95E232C50AC0B00D6459F /* GREENFUZ.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CCC95E222C50AC0B00D6459F /* GREENFUZ.TTF */; };
 		CCC95E242C50AC0B00D6459F /* GREENFUZ.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CCC95E222C50AC0B00D6459F /* GREENFUZ.TTF */; };
 		CCC95E252C50AC0B00D6459F /* GREENFUZ.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CCC95E222C50AC0B00D6459F /* GREENFUZ.TTF */; };
+		CCD4B7622C51C49600A7F63E /* DescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4B7612C51C49600A7F63E /* DescriptionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		CCC95E1D2C50A8BB00D6459F /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
 		CCC95E222C50AC0B00D6459F /* GREENFUZ.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GREENFUZ.TTF; sourceTree = "<group>"; };
 		CCC95E262C50ACE200D6459F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CCD4B7612C51C49600A7F63E /* DescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				CCC95E152C508AE100D6459F /* RowCard.swift */,
 				CC50F4382C4CE1EA0094823C /* BigCard.swift */,
 				CCC95E1D2C50A8BB00D6459F /* ProfileCard.swift */,
+				CCD4B7612C51C49600A7F63E /* DescriptionItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4B7622C51C49600A7F63E /* DescriptionItem.swift in Sources */,
 				CCC95E032C4F44CB00D6459F /* CarouselView.swift in Sources */,
 				CCC95E0F2C507ADB00D6459F /* MainView.swift in Sources */,
 				CC50F4052C4C2B6F0094823C /* RickAndMorty.xcdatamodeld in Sources */,

@@ -14,6 +14,9 @@ struct ListView: View {
         NavigationView {
             List(viewModel.characters) { character in
                 RowCard(character: character)
+                    .backgroundStyle(.thinMaterial)
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
                     .onAppear {
                         if (character.id == viewModel.characters.last?.id) {
                         viewModel.fetchCharacters()
@@ -26,7 +29,7 @@ struct ListView: View {
                     viewModel.fetchCharacters()
                 }
             }
-        }
+        }.tint(Color("Green"))
     }
 }
 
