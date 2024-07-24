@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct RickAndMortyApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    @StateObject private var viewModel = CharacterViewModel()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainView().environmentObject(viewModel)
         }
     }
 }
